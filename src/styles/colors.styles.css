@@ -1,0 +1,9 @@
+:root {
+    --primary: #0E5A8A;
+    --alert: #A82A2A;
+    --warning: #e67f17;
+    --text: #183ab7;
+    --background: #f9f7f7;
+    --background-emphasis: #cfc6c6;
+    --background-hover: #d8d8d8;
+}

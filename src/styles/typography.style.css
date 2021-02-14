@@ -1,0 +1,23 @@
+:root {
+    --default-font-size: 1.6rem;
+    --heading-1-font-size: 3rem;
+    --heading-2-font-size: 2rem;
+}
+
+body * {
+    font-family: Roboto serif;
+    font-size: var(--default-font-size);
+    font-weight: 400;
+    color: var(--text);
+}
+
+.heading__primary {
+    font-size: var(--heading-1-font-size);
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.heading__secondary {
+    font-size: var(--heading-2-font-size);
+    font-weight: 400;
+}

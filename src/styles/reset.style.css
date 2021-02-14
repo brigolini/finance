@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 62.5%;
+    background-color: var(--background);
+}
+
+@media screen and (max-width: 900px) {
+    *,
+    *::before,
+    *::after {
+        font-size: 50%;
+    }
+}
