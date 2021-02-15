@@ -1,7 +1,18 @@
 .app-search-bar{
-
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
 }
 
 .app-search-bar__input {
+    width: 100%;
     border: var(--grey-dark-3) solid 2px;
+    height: 3rem;
+    margin-right: -3rem;
+}
+
+.app-search-bar__icon {
+    height: 3rem;
+    fill: var(--grey-dark-3);
 }

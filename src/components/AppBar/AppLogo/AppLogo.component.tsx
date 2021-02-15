@@ -10,7 +10,11 @@ const AppLogo: React.FC<AppLogoProps> = ({
   width,
   height,
 }: PropsWithChildren<AppLogoProps>) => {
-  return <AppLogoImg className="app-logo__img" style={{ width, height }} />;
+  return (
+    <div className="app-logo">
+      <AppLogoImg className="app-logo__img" style={{ width, height }} />
+    </div>
+  );
 };
 
 export default AppLogo;

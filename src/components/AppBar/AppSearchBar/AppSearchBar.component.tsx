@@ -5,10 +5,10 @@ import "./SearchBar.styles.css";
 const AppSearchBar = () => {
   return (
     <>
-      <span className="app-search-bar">
+      <div className="app-search-bar">
         <input type="text" className="app-search-bar__input" />
         <SearchIcon className="app-search-bar__icon" />
-      </span>
+      </div>
     </>
   );
 };

@@ -1,8 +1,12 @@
+.app-logo {
+    margin-left: 3rem;
+    background-color: transparent;
+}
 .app-logo__img {
     display: block;
     margin: auto;
     max-height: 6rem;
     max-width: 6rem;
-    background-color: transparent;
+    background-color: inherit;
     fill: white;
 }
