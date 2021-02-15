@@ -1,18 +1,26 @@
 .app-search-bar{
-    background-color: blue;
+    background-color: transparent;
     display: flex;
+    justify-content: center;
     align-items: center;
-    border-radius: 10%;
+    width: 80rem;
 }
 
 .app-search-bar__input {
-    width: 100%;
+    width: 90%;
     border: var(--grey-dark-3) solid 2px;
+    border-radius: 20px;
     height: 3rem;
     margin-right: -3rem;
+    transition: .2s;
+    outline: none;
+}
+.app-search-bar__input:focus {
+    width: 100%;
 }
 
 .app-search-bar__icon {
     height: 3rem;
     fill: var(--grey-dark-3);
+    border-radius: 20px;
 }
