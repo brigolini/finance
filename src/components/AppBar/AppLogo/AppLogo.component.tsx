@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import { ReactComponent as AppLogoImg } from "../../../images/logo.svg";
+import { ReactComponent as AppLogoImg } from "images/logo.svg";
 import "./AppLogo.styles.css";
 
 interface AppLogoProps {

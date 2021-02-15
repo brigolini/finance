@@ -1,8 +1,8 @@
 import React from "react";
 import "./HeaderBar.styles.css";
-import AppLogo from "../../components/AppBar/AppLogo/AppLogo.component";
-import AppSearchBar from "../../components/AppBar/AppSearchBar/AppSearchBar.component";
-import AppUserPreference from "../../components/AppBar/AppUserPreference/AppUserPreference.component";
+import AppLogo from "components/AppBar/AppLogo/AppLogo.component";
+import AppSearchBar from "components/AppBar/AppSearchBar/AppSearchBar.component";
+import AppUserPreference from "components/AppBar/AppUserPreference/AppUserPreference.component";
 
 const HeaderBar = () => {
   return (

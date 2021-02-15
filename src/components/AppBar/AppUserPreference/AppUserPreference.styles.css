@@ -1,0 +1,7 @@
+.app-user-preference {
+    background-color: transparent;
+}
+.app-user-preference > svg {
+    fill: white;
+    background-color: inherit;
+}

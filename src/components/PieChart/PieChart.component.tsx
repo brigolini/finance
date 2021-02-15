@@ -1,7 +1,7 @@
 import React from "react";
 import "./PieChart.style.css";
+import currencyFormat from "logic/formats";
 import calculatePieChart, { PieChartItem } from "./pieChart";
-import currencyFormat from "../../logic/formats";
 
 interface PieChartProps {
   items: PieChartItem[];

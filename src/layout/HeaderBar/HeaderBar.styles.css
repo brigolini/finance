@@ -1,5 +1,6 @@
 .appbar{
     display: flex;
+    justify-content: space-between;
     height: 8rem;
     border: var(--grey-light-3) 2px solid;
     background-color: var(--primary-light);
@@ -7,22 +8,21 @@
 }
 
 .app-bar__icon {
-    width: 10%;
     background-color: transparent;
     text-align: center;
     margin: auto 0;
 }
 
 .app-bar__search {
-    flex: 0 0 80%;
     background-color: transparent;
     text-align: center;
     margin: auto 0;
 }
 
 .app-bar__user-preference {
-    flex: 0 0 10%;
-    background-color: pink;
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+    background-color: transparent;
     text-align: center;
-    margin: auto 0;
 }
