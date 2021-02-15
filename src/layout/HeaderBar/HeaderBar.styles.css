@@ -1,0 +1,4 @@
+.appbar{
+    height: 8rem;
+    border: var(--grey-light-3) 2px solid;
+}

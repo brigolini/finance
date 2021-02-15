@@ -9,24 +9,29 @@ const Table = <T,>({ items, columns }: PropsWithChildren<TableProps<T>>) => {
   return (
     <>
       <div className="table__wrapper">
-        <thead>
-          {columns.map((title) => (
-            <th>{title.description}</th>
-          ))}
-        </thead>
-        <tbody>
-          {items.map((item) => {
-            const values = Object.values(item);
-            return (
-              <tr>
-                {values.map((value, index) => {
-                  if (columns[index].type === "string") return <td>{value}</td>;
-                  return <td className="numeric">{value}</td>;
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
+        <table>
+          <thead>
+            <tr>
+              {columns.map((title) => (
+                <th key={title.description}>{title.description}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {items.map((item) => {
+              const values = Object.values(item);
+              return (
+                <tr key={values[0]}>
+                  {values.map((value, index) => {
+                    if (columns[index].type === "string")
+                      return <td key={value}>{value}</td>;
+                    return <td className="numeric" key={value}>{value}</td>;
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
     </>
   );

@@ -26,11 +26,11 @@ td {
 }
 
 tr:nth-child(odd) *{
-    background-color: var(--background-emphasis);
+    background-color: var(--grey-light-4);
 }
 
 tr:hover *{
-    background-color: var(--background-hover);
+    background-color: var(--grey-light-3);
     cursor: pointer;
 }
 tr td {
