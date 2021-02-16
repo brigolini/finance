@@ -1,10 +1,10 @@
 .appbar{
     display: flex;
     justify-content: space-between;
-    height: 8rem;
-    border: var(--grey-light-3) 2px solid;
+    border-bottom: var(--grey-light-3) 2px solid;
     background-color: var(--primary-light);
     align-items: stretch;
+    height: 100%;
 }
 
 .app-bar__icon {

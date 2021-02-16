@@ -9,9 +9,10 @@
 .app-search-bar__input {
     width: 90%;
     border: var(--grey-dark-3) solid 2px;
-    border-radius: 20px;
+    border-radius: 100px;
     height: 3rem;
-    margin-right: -3rem;
+    margin-right: -3.6rem;
+    padding: .75rem 2rem;
     transition: .2s;
     outline: none;
 }

@@ -1,0 +1,28 @@
+.footer {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.footer__mark {
+    background-color: inherit;
+    padding-right: 10rem;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    color: white;
+    animation: moveInRight 1s ease-out ;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(-200rem);
+    }
+    50% {
+        transform: translateX(5rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
