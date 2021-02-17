@@ -1,4 +1,4 @@
-.app-search-bar{
+.app-search-bar {
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -16,12 +16,43 @@
     transition: .2s;
     outline: none;
 }
+
 .app-search-bar__input:focus {
     width: 100%;
 }
 
 .app-search-bar__icon {
-    height: 3rem;
+    height: 2rem;
     fill: var(--grey-dark-3);
     border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .app-search-bar {
+        width: 70rem;
+    }
+    .app-search-bar__input {
+        width: 90%;
+        height: 3rem;
+        margin-right: -4rem;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .app-search-bar {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .app-search-bar {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .app-search-bar {
+        width: 23rem;
+    }
 }

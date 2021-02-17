@@ -10,6 +10,7 @@
     background-color: inherit;
     padding-right: 10rem;
     font-weight: 900;
+    font-size: 2rem;
     letter-spacing: .5rem;
     color: white;
     animation: moveInRight 1s ease-out ;
@@ -24,5 +25,18 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .footer__mark {
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .footer__mark {
+        padding-right: 1rem;
+        letter-spacing: .1rem;
     }
 }

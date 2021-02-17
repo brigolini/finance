@@ -2,6 +2,7 @@ import React from "react";
 import HeaderBar from "layout/HeaderBar/HeaderBar.component";
 import "./AppLayout.style.css";
 import Footer from "layout/footer/Footer.component";
+import Main from "layout/main/Main.component";
 
 const AppLayout: React.FC = () => {
   return (
@@ -11,7 +12,9 @@ const AppLayout: React.FC = () => {
       </div>
       <div className="app-container__content">
         <aside className="app-container__sidebar">aside part</aside>
-        <main className="app-container__main">main part</main>
+        <main className="app-container__main">
+          <Main />
+        </main>
       </div>
       <footer className="app-container__bottom">
         <Footer />

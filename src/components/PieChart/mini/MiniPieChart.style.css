@@ -1,0 +1,62 @@
+.pie {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.pie__chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.pie__chart-color {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.pie__chart-white {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    z-index: 1;
+    background-color: white;
+}
+
+.pie__chart-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: .8rem;
+    z-index: 3;
+    text-align: center;
+}
+
+.pie__chart-title__text {
+    background-color: white;
+}
+
+.pie__key {
+    padding: 7rem 0 7rem 3rem;
+    width: 100%;
+}
+
+.pie__key li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.pie__key div {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+}

@@ -1,0 +1,43 @@
+.card-investment {
+    display: flex;
+    padding: 3rem;
+}
+
+.card-investment__column {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-investment__column :not(:last-child) {
+    padding-bottom: 1rem;
+}
+
+.card-investment__column :nth-child(odd) {
+    background-color: var(--grey-light-3);
+    font-weight: 700;
+}
+
+.card-investment__column.card-investment__column svg {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    align-self: flex-end;
+    fill: var(--grey-dark-2);
+    background-color: transparent;
+}
+
+.negative::after {
+    content: ")";
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.negative::before {
+    content: "(";
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.negative {
+    color: var(--alert);
+    font-weight: 700;
+}

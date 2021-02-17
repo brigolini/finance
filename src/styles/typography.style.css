@@ -5,7 +5,7 @@
 }
 
 body * {
-    font-family: Roboto serif;
+    font-family: Roboto;
     font-size: var(--default-font-size);
     font-weight: 400;
     color: var(--text);

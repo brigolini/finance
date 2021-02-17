@@ -1,7 +1,6 @@
 .pie {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 30rem;
 }
 
 .pie__chart {

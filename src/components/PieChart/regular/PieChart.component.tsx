@@ -1,23 +1,27 @@
 import React from "react";
 import "./PieChart.style.css";
 import currencyFormat from "logic/formats";
-import calculatePieChart, { PieChartItem } from "./pieChart";
+import calculateChartPercentages, { PieChartItem } from "./PieChart";
 
 interface PieChartProps {
   items: PieChartItem[];
   title: string;
   value: number;
+  width: string;
+  height: string;
 }
 
 const PieChart: React.FC<PieChartProps> = ({
   items,
   title,
   value,
+  height,
+  width,
 }: PieChartProps) => {
-  const { piePercentageStyle, keys } = calculatePieChart(items);
+  const { piePercentageStyle, keys } = calculateChartPercentages(items);
   return (
     <>
-      <div className="pie">
+      <div className="pie" style={{ height, width }}>
         <div>
           <div className="pie__chart">
             <div className="pie__chart-white" />

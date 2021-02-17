@@ -24,7 +24,7 @@ export interface PieChartItem {
   value: number;
 }
 // TODO: Use a CSS lib to make it more maintainable and easy to understand, maybe emoticon
-const calculatePieChart = (items: PieChartItem[]): PieChartData => {
+const calculateChartPercentages = (items: PieChartItem[]): PieChartData => {
   let lastPercentage = 0;
   const piePercentageStyle = items
     .map((item, index) => {
@@ -45,4 +45,4 @@ const calculatePieChart = (items: PieChartItem[]): PieChartData => {
   });
   return { piePercentageStyle: `conic-gradient(${piePercentageStyle})`, keys };
 };
-export default calculatePieChart;
+export default calculateChartPercentages;
