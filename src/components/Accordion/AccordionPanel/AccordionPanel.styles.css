@@ -1,8 +1,9 @@
-.accordion-panel{
+.accordion-panel {
     position: relative;
     display: flex;
     flex-direction: column;
 }
+
 .accordion-panel__summary {
     display: flex;
     height: 6rem;
@@ -14,7 +15,7 @@
     align-items: center;
 }
 
-.accordion-panel__left-image{
+.accordion-panel__left-image {
     width: 10%;
     background-color: inherit;
 }
@@ -37,7 +38,7 @@
     z-index: 0;
 }
 
-.accordion-panel__checkbox{
+.accordion-panel__checkbox {
     position: absolute;
     right: 2.9rem;
     top: 2.3rem;
@@ -49,19 +50,20 @@
 
 /* To show the panel */
 .accordion-panel__checkbox:checked ~ .accordion-panel__card {
-    height: 100%;
-    flex: 1;
+    transition: all .5s;
+    max-height: 100vh;
     overflow: hidden;
 }
 
 .accordion-panel__checkbox:not(:checked) ~ .accordion-panel__card {
-    height: 0;
+    transition: all .5s;
+    max-height: 0;
     overflow: hidden;
 }
 
 /* Responsible to change the plus sign (+) */
 .accordion-panel__checkbox:checked + .accordion-panel__summary .accordion-panel__icon .accordion-panel__icon__image {
-   transform: rotate(45deg);
+    transform: rotate(45deg);
     transition: .2s;
 }
 
@@ -85,6 +87,7 @@
     .accordion-panel__left-text {
         padding-left: 3rem;
     }
+
     .accordion-panel__checkbox {
         position: absolute;
         right: 1.5rem;
